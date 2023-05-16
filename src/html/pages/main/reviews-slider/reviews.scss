@@ -1,0 +1,21 @@
+.reviews {
+  margin-bottom: $offset-bigest;
+
+  &__buttons {
+    max-width: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin: $offset-middle auto 0 auto;
+  }
+
+  @include mobile {
+    &__buttons {
+      max-width: 200px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: $offset-main auto 0 auto;
+    }
+  }
+}

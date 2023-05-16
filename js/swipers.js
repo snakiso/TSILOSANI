@@ -40,3 +40,15 @@ $(document).ready(function () {
 $(window).on('resize', function () {
   initSwiperCategory();
 }); //Запуск функции при изменении размера
+
+const swiper3 = new Swiper('.reviews-slider', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 50,
+  autoWidth: false,
+  centeredSlides: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

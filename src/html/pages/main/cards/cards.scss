@@ -1,7 +1,9 @@
 .cards {
   margin-bottom: $offset-bigest;
 
+
   &__card {
+    position: relative;
     grid-column: 4 span;
     display: flex;
     flex-direction: column;
@@ -9,6 +11,54 @@
     &--grey-bg {
       background: #F7F7F7;
       border-radius: 20px;
+    }
+  }
+
+  &__card--date {
+    position: relative;
+    transition: ease-in .1s;
+    min-height: 190px;
+    margin-bottom: 50px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 135px;
+      height: 77px;
+      background-image: url(../img/card-date-vector.png);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -100%;
+      transition: ease-in .1s;
+      visibility: hidden;
+    }
+
+    &:hover {
+      min-height: 240px;
+      margin-bottom: 0;
+      background-color: $color-secondary;
+
+      &::after {
+        visibility: visible;
+        bottom: -28px;
+      }
+
+      .cards__card-place,
+      .cards__card-date,
+      .cards__card-title--date,
+      .cards__card-item--date {
+        color: white;
+      }
+
+      .cards__card-date-bottom {
+        bottom: -50px;
+      }
+
+      .cards__button {
+        bottom: -10px;
+        opacity: 1;
+        z-index: 3;
+      }
     }
   }
 
@@ -20,6 +70,12 @@
 
   &__card-inner {
     padding: 40px 30px;
+
+    &--date {
+      min-height: 190px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__card-title {
@@ -40,6 +96,47 @@
       padding-left: 8px;
       display: block;
     }
+
+    &--date {
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 0.76em;
+      letter-spacing: 0.06em;
+      color: $color-secondary;
+    }
+  }
+
+  &__card-date-block {
+    display: flex;
+  }
+
+  &__card-date {
+    margin-top: -5px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.17em;
+    letter-spacing: 0.04em;
+    color: $color-secondary;
+    display: block;
+  }
+
+  &__card-date-bottom {
+    position: relative;
+    left: 0;
+    bottom: 2px;
+    z-index: -1;
+    max-width: 100%;
+    transition: ease-in .2s;
+  }
+
+  &__card-place {
+    position: absolute;
+    bottom: 15px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2.17em;
+    letter-spacing: 0.04em;
+    color: $color-secondary;
   }
 
   &__card-text {
@@ -79,6 +176,11 @@
 
   &__card-list {
     padding-left: $offset-main;
+
+    &--date {
+      max-width: 205px;
+      margin: 0;
+    }
   }
 
   &__card-item {
@@ -87,6 +189,49 @@
 
     &:not(:last-child) {
       margin-bottom: 8px;
+    }
+
+    &--date {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.38em;
+      letter-spacing: 0.02em;
+      color: $color-secondary;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    opacity: 0;
+    transition: ease-in .2s;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      left: 50%;
+      top: 50%;
+      background-color: white;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 24px;
+      height: 2px;
+    }
+
+    &::after {
+      height: 24px;
+      width: 2px;
     }
   }
 
@@ -148,7 +293,7 @@
       margin-bottom: 0;
     }
 
-    &__card-inner{
+    &__card-inner {
       padding: 20px;
     }
 

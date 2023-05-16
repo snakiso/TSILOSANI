@@ -23,17 +23,18 @@
     background: none;
     color: white;
     border: 1px solid white;
+    display: inline-block;
   }
 
   &--margin-top {
     margin-top: 20px;
   }
 
-  &--centered{
-    margin:$offset-middle auto 0 auto;
+  &--centered {
+    margin: $offset-middle auto 0 auto;
   }
 
-  &:hover{
+  &:hover {
     background: none;
     color: $color-secondary;
   }
@@ -42,12 +43,17 @@
     padding: 7px 21px;
     font-size: 14px;
 
-    &--margin-top{
+    &--margin-top {
       margin: 20px auto;
     }
 
-    &--centered{
+    &--centered {
       margin: 0 auto;
     }
   }
+}
+
+.button--white:hover {
+  color: $color-secondary;
+  background-color: white;
 }

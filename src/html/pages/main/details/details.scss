@@ -29,6 +29,7 @@
   &__box-text {
     @extend %text-settings;
     margin-bottom: 0;
+    margin-top: 10px;
 
     &--slim {
       max-width: 220px;

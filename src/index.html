@@ -13,8 +13,19 @@
       @@include('html/pages/main/details/details.html')
       @@include('html/pages/main/cards/cards.html')
       @@include('html/pages/main/about/about.html')
+      @@include('html/pages/main/reviews-slider/reviews.html')
+      <section class="dates">
+        <div class="wrapper">
+          <div class="title green-line">
+            <span class="title--secondary-slim">Ближайшие</span>
+            <h2 class="title--own">ДАТЫ ПРИЕЗДА</h2>
+          </div>
+        </div>
+        @@include('html/pages/main/cards/date-cards.html')
+      </section>
       @@include('html/pages/main/exp/exp.html')
       @@include('html/pages/main/cards/cards-2.html')
+      @@include('html/pages/main/form/form.html')
       <section class="price">
         <div class="wrapper">
           <div class="title green-line">
@@ -30,6 +41,7 @@
   </div>
   <script src="js/jQuery2.2.0.js"></script>
   <script src="js/swipers.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
