@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/common/head.html',{
+"title": "TSILOSANI"
+})
+
+<body>
+  <div class="page">
+    @@include('html/common/header/header.html')
+    <main>
+      @@include('html/pages/main/hero/hero.html')
+      @@include('html/pages/main/title.html')
+      @@include('html/pages/main/details/details.html')
+      @@include('html/pages/main/cards/cards.html')
+      @@include('html/pages/main/about/about.html')
+      @@include('html/pages/main/exp/exp.html')
+      @@include('html/pages/main/cards/cards-2.html')
+      <section class="price">
+        <div class="wrapper">
+          <div class="title green-line">
+            <h2 class="title--own">В стоимость входит</h2>
+          </div>
+        </div>
+        @@include('html/pages/main/cards/price-cards.html')
+        <div class="wrapper">
+          @@include('html/pages/main/price/price-grid-chess.html')
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/jQuery2.2.0.js"></script>
+  <script src="js/swipers.js"></script>
+</body>
+
+</html>

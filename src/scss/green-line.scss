@@ -1,0 +1,21 @@
+.green-line {
+  position: relative;
+  padding-left: $offset-middle;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 5px;
+    background-color: $color-secondary;
+    left: 0;
+  }
+
+  @include mobile {
+    padding-left: 10px;
+
+    &::before {
+      width: 3px;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.cards {
+  margin-bottom: $offset-bigest;
+
+  &__card {
+    grid-column: 4 span;
+    display: flex;
+    flex-direction: column;
+
+    &--grey-bg {
+      background: #F7F7F7;
+      border-radius: 20px;
+    }
+  }
+
+  &__wrapper {
+    &--slider {
+      width: auto;
+    }
+  }
+
+  &__card-inner {
+    padding: 40px 30px;
+  }
+
+  &__card-title {
+    position: relative;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+
+    &--green-bg {
+      background-color: $color-secondary;
+      color: white;
+      padding: 0 8px;
+      border-radius: 2px;
+    }
+
+    &--own-style {
+      color: $color-main;
+      padding-left: 8px;
+      display: block;
+    }
+  }
+
+  &__card-text {
+    position: relative;
+    padding-left: 8px;
+    @extend %text-settings;
+    margin-top: $offset-middle;
+    font-weight: 300;
+    flex: 1 0 auto;
+    max-width: 400px;
+
+    &--tight {
+      max-width: 335px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 2px;
+      background-color: $color-secondary;
+      top: -20px;
+      left: 8px;
+      border-radius: 5px;
+    }
+  }
+
+  &__card-img {
+    width: 100%;
+    display: block;
+    flex: 0 1 auto;
+  }
+
+  &__pagination {
+    display: none;
+  }
+
+  &__card-list {
+    padding-left: $offset-main;
+  }
+
+  &__card-item {
+    @extend %text-settings;
+    font-weight: 300;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: $offset-middle;
+
+    &--slider {
+      position: relative;
+
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+
+      &--slider {
+        column-gap: 0;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
+      }
+    }
+
+    &__card {
+      margin-bottom: $offset-middle;
+
+      &--slide {
+        flex-shrink: 1;
+        min-height: 470px;
+      }
+
+      &--slide-fs-0 {
+        flex-shrink: 0;
+        min-height: 200px;
+      }
+    }
+
+    &__card-img {
+      display: none;
+
+      &--slide {
+        display: block;
+        width: 250px;
+        flex: 0 1 auto;
+      }
+    }
+
+    &__card-title {
+      font-size: 26px;
+      line-height: 1.2em;
+    }
+
+    &__card-text {
+      max-width: none;
+      font-size: 16px;
+      line-height: 1.25em;
+      flex: 1 0 auto;
+      margin-bottom: 0;
+    }
+
+    &__card-inner{
+      padding: 20px;
+    }
+
+    &__card-item {
+      font-size: 16px;
+      line-height: 1.25em;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

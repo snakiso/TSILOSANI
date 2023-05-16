@@ -1,0 +1,43 @@
+@import '../scss/fonts';
+@import '../scss/vars';
+@import '../scss/breakpoints';
+@import '../scss/settings';
+@import '../scss/snippets';
+@import '../scss/green-line';
+@import '../scss/title';
+@import '../scss/grid-chess';
+@import '../scss/button';
+@import '../scss/contact-lane';
+@import '../html/common/header/header';
+@import '../html/pages/main/hero/hero';
+@import '../html/pages/main/details/details';
+@import '../html/pages/main/cards/cards';
+@import '../html/pages/main/about/about';
+@import '../html/pages/main/exp/exp';
+@import '../scss/slider';
+
+
+.page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: $offset-main;
+}
+
+.wrapper {
+  max-width: $container-width;
+  margin: auto;
+  padding: 0 $offset-main;
+
+  @include mobile {
+    padding: 0 15px;
+  }
+}
