@@ -1,0 +1,64 @@
+.video {
+  margin-bottom: $offset-bigest;
+
+  &__wrapper {
+    margin-bottom: $offset-middle;
+  }
+
+  &__box {
+    grid-column: 6 span;
+    position: relative;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  &__poster {
+    position: relative;
+  }
+
+  &__bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  &__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &__name {
+    font-weight: 600;
+    @extend %text-settings;
+    color: black;
+    margin-top: $offset-secondary;
+    display: block;
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $offset-main;
+    }
+
+    &__box:first-child {
+      margin-bottom: $offset-main;
+    }
+
+    &__play {
+      width: 40px;
+    }
+
+    &__name {
+      font-size: 14px;
+      line-height: 1.43em;
+    }
+  }
+}

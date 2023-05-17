@@ -265,6 +265,19 @@
       }
     }
 
+    &__card--date {
+
+      &:hover {
+        min-height: 190px;
+        margin-bottom: 40px;
+        background-color: $color-secondary;
+
+        &::after {
+          bottom: -15%;
+        }
+      }
+    }
+
     &__card {
       &--date {
         max-width: 620px;

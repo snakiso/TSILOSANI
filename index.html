@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230517095118" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230517095118"></script>
-  <script src="https://unpkg.com/imask?_v=20230517095118"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230517154548" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230517154548"></script>
+  <script src="https://unpkg.com/imask?_v=20230517154548"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20230517154548"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20230517154548" />
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230517095118">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230517154548">
   <title>TSILOSANI</title>
 </head>
 
@@ -239,6 +241,32 @@
       <button class="button">Смотреть до/после</button>
     </div>
   </div>
+</section>
+      <section class="video">
+  <div class="wrapper">
+    <div class="title green-line">
+      <h2 class="title--own">Видео</h2>
+    </div>
+  </div>
+  <div class="video__wrapper wrapper grid">
+    <a href="https://www.youtube.com/watch?v=6uJoN_I9ebQ&list=RD6uJoN_I9ebQ&start_radio=1" class="video__box"
+      data-fancybox="video-gallery">
+      <div class="video__poster">
+        <img class="video__bg " src="img/video/video_bg.jpg" alt="">
+        <img class="video__play" src="img/video/play.svg" alt="">
+      </div>
+      <span class="video__name">Добро пожаловать в клинику</span>
+    </a>
+    <a href="https://www.youtube.com/watch?v=Gsy5sJy5_34&list=RDGsy5sJy5_34&start_radio=1" class="video__box"
+      data-fancybox="video-gallery">
+      <div class="video__poster">
+        <img class="video__bg " src="img/video/video_bg-1.jpg" alt="">
+        <img class="video__play" src="img/video/play.svg" alt="">
+      </div>
+      <span class="video__name">Полет по клинике</span>
+    </a>
+  </div>
+  <button class="button button--centered">Консультация</button>
 </section>
       <section class="dates">
         <div class="wrapper">
@@ -497,11 +525,40 @@
 </div>
         </div>
       </section>
+      <section class="contact">
+  <div class="contact__wrapper wrapper">
+    <h2 class="title--own">Быстрая связь</h2>
+    <span class="contact__subtitle">с нашими консультантами</span>
+    <div class="contact__buttons-block">
+      <button class="button button--whatsapp"><svg class="button__img button__img--whatsapp" width="25" height="24" viewBox="0 0 25 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.4193 4.00809C18.3143 1.90063 15.5148 0.739517 12.5324 0.738281C6.38695 0.738281 1.38542 5.73967 1.38295 11.8868C1.38213 13.8518 1.89546 15.77 2.87119 17.4608L1.28943 23.2383L7.19994 21.6878C8.82853 22.5762 10.662 23.0444 12.5279 23.0449H12.5326C18.6774 23.0449 23.6795 18.0431 23.6818 11.8957C23.683 8.9165 22.5244 6.1154 20.4193 4.00809ZM12.5324 21.162H12.5286C10.8658 21.1613 9.23502 20.7144 7.81202 19.8703L7.47378 19.6694L3.96639 20.5895L4.90256 17.1698L4.68215 16.8192C3.75449 15.3438 3.26464 13.6384 3.26546 11.8875C3.26738 6.77815 7.42461 2.62134 12.5361 2.62134C15.0114 2.62216 17.3381 3.58731 19.0877 5.33894C20.8373 7.09058 21.8002 9.41885 21.7994 11.895C21.7972 17.0048 17.6403 21.162 12.5324 21.162ZM17.6155 14.2215C17.337 14.082 15.9673 13.4083 15.7119 13.3152C15.4567 13.2222 15.2708 13.1759 15.0852 13.4547C14.8994 13.7335 14.3656 14.3611 14.203 14.5469C14.0404 14.7328 13.8781 14.7561 13.5995 14.6166C13.3208 14.4772 12.4233 14.1829 11.3591 13.2339C10.531 12.4952 9.97193 11.5829 9.80933 11.3041C9.64701 11.0251 9.80796 10.8888 9.93156 10.7356C10.2331 10.3611 10.5351 9.96844 10.628 9.78264C10.7209 9.59669 10.6744 9.43396 10.6046 9.29457C10.5351 9.15518 9.97798 7.78395 9.74589 7.22598C9.51957 6.68298 9.29009 6.75632 9.11898 6.7478C8.95666 6.7397 8.77085 6.73805 8.58504 6.73805C8.39938 6.73805 8.09753 6.80768 7.84209 7.08673C7.5868 7.36565 6.86719 8.03952 6.86719 9.41075C6.86719 10.782 7.86544 12.1067 8.00469 12.2926C8.14394 12.4785 9.96919 15.2924 12.7637 16.499C13.4284 16.7863 13.9472 16.9575 14.3519 17.0859C15.0193 17.298 15.6265 17.268 16.1066 17.1963C16.6419 17.1163 17.7547 16.5223 17.987 15.8717C18.2191 15.2209 18.2191 14.6632 18.1493 14.5469C18.0799 14.4307 17.894 14.3611 17.6155 14.2215Z"
+            fill="#22B856" />
+        </svg>Написать WhatsApp</button>
+      <button class="button button--telegram"><svg class="button__img button__img--telegram" width="25" height="24" viewBox="0 0 25 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_25_753)">
+            <path
+              d="M23.8887 2.38403C23.5955 2.02551 23.1564 1.82812 22.6522 1.82812C22.378 1.82812 22.0876 1.8858 21.7892 1.99988L1.47363 9.75494C0.395504 10.1664 0.250301 10.7838 0.25964 11.1152C0.268978 11.4467 0.448971 12.0549 1.5487 12.4048C1.55529 12.4069 1.56189 12.4089 1.56848 12.4107L5.78247 13.6166L8.0614 20.1334C8.37213 21.0218 9.06958 21.5737 9.88183 21.5737C10.394 21.5737 10.8977 21.3591 11.3386 20.9533L13.9451 18.5533L17.7257 21.5975C17.7261 21.5978 17.7266 21.598 17.727 21.5984L17.7629 21.6273C17.7662 21.6299 17.7696 21.6326 17.7729 21.6352C18.1932 21.9611 18.6519 22.1332 19.0999 22.1334H19.1001C19.9755 22.1334 20.6726 21.4854 20.8757 20.4827L24.2043 4.04645C24.338 3.38672 24.2259 2.79639 23.8887 2.38403ZM7.1922 13.3876L15.3223 9.23419L10.2599 14.6133C10.177 14.7014 10.1182 14.8092 10.0893 14.9266L9.11316 18.8806L7.1922 13.3876ZM10.3859 19.9188C10.3522 19.9497 10.3184 19.9774 10.2845 20.0028L11.1901 16.3348L12.8375 17.6614L10.3859 19.9188ZM22.8261 3.76721L19.4974 20.2037C19.4654 20.361 19.363 20.727 19.0999 20.727C18.9699 20.727 18.8066 20.6561 18.6394 20.5274L14.3555 17.0781C14.3549 17.0775 14.3542 17.077 14.3535 17.0766L11.8044 15.024L19.1252 7.24512C19.3596 6.99609 19.3808 6.61469 19.1755 6.34113C18.9701 6.06757 18.5978 5.98151 18.2933 6.13715L6.25268 12.2884L1.98138 11.0663L22.2907 3.31366C22.4623 3.24811 22.582 3.23438 22.6522 3.23438C22.6952 3.23438 22.7717 3.2395 22.8001 3.27448C22.8375 3.32007 22.8851 3.47552 22.8261 3.76721Z"
+              fill="#0A8FF0" />
+          </g>
+          <defs>
+            <clipPath id="clip0_25_753">
+              <rect width="24" height="24" fill="white" transform="translate(0.259277)" />
+            </clipPath>
+          </defs>
+        </svg>Написать Telegram</button>
+    </div>
+    <img class="contact__screenshots" src="img/screens.png" alt="" >
+  </div>
+</section>
     </main>
   </div>
-  <script src="js/jQuery2.2.0.js?_v=20230517095118"></script>
-  <script src="js/swipers.js?_v=20230517095118"></script>
-  <script src="js/form.js?_v=20230517095118"></script>
+  <script src="js/jQuery2.2.0.js?_v=20230517154548"></script>
+  <script src="js/video.js?_v=20230517154548"></script>
+  <script src="js/swipers.js?_v=20230517154548"></script>
+  <script src="js/form.js?_v=20230517154548"></script>
 </body>
 
 </html>

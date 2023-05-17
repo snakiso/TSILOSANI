@@ -38,6 +38,7 @@
   font-style: normal;
 }
 
+.video__name,
 .form-block__subtitle,
 .exp__text,
 .cards__card-item,
@@ -214,9 +215,45 @@ body {
   margin: 40px auto 0 auto;
 }
 
-.button:hover {
+.button .button__img {
+  margin-right: 10px;
+}
+
+.button--whatsapp {
+  align-items: center;
+  display: flex;
   background: none;
+  border: 1px solid #22B856;
   color: #22B856;
+  padding: 8px 80px 8px 25px;
+  margin-right: 30px;
+}
+
+.button--whatsapp:hover {
+  color: white !important;
+  background-color: #22B856 !important;
+}
+
+.button--whatsapp:hover .button__img--whatsapp {
+  filter: invert(213%) sepia(26) saturate(1%) hue-rotate(363deg) brightness(192%) contrast(91%);
+}
+
+.button--telegram {
+  align-items: center;
+  display: flex;
+  background: none;
+  border: 1px solid #0A8FF0;
+  color: #0A8FF0;
+  padding: 8px 80px 8px 25px;
+}
+
+.button--telegram:hover {
+  color: white !important;
+  background-color: #0A8FF0 !important;
+}
+
+.button--telegram:hover .button__img--telegram {
+  filter: invert(213%) sepia(26) saturate(1%) hue-rotate(363deg) brightness(192%) contrast(91%);
 }
 
 .button--white:hover {
@@ -895,6 +932,74 @@ body {
   margin: 20px auto 0 auto;
 }
 
+.video {
+  margin-bottom: 100px;
+}
+
+.video__wrapper {
+  margin-bottom: 40px;
+}
+
+.video__box {
+  grid-column: 6 span;
+  position: relative;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.video__poster {
+  position: relative;
+}
+
+.video__bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.video__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video__name {
+  font-weight: 600;
+  color: black;
+  margin-top: 20px;
+  display: block;
+}
+
+.contact__wrapper {
+  text-align: center;
+}
+
+.contact__subtitle {
+  display: block;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.18em;
+  letter-spacing: 0.04em;
+  color: #222222;
+}
+
+.contact__buttons-block {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__screenshots {
+  display: block;
+  margin: auto;
+}
+
 .swiper-pagination {
   display: flex;
   justify-content: center;
@@ -965,6 +1070,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .cards__card--date:hover {
+    min-height: 190px;
+    margin-bottom: 40px;
+    background-color: #22B856;
+  }
+
+  .cards__card--date:hover::after {
+    bottom: -15%;
   }
 
   .cards__card--date {
@@ -1042,6 +1157,10 @@ body {
 
   .reviews-slider__nav {
     right: 0;
+  }
+
+  .contact__screenshots {
+    display: none;
   }
 }
 
@@ -1137,6 +1256,24 @@ body {
 
   .button--centered {
     margin: 0 auto;
+  }
+
+  .button--whatsapp {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 12px 47px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .button--telegram {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 12px 50px;
+    font-size: 16px;
   }
 
   .contact-lane {
@@ -1502,6 +1639,41 @@ body {
   .form-block__input::placeholder {
     font-size: 14px;
     line-height: 1.41em;
+  }
+
+  .video {
+    margin-bottom: 50px;
+  }
+
+  .video__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .video__box:first-child {
+    margin-bottom: 30px;
+  }
+
+  .video__play {
+    width: 40px;
+  }
+
+  .video__name {
+    font-size: 14px;
+    line-height: 1.43em;
+  }
+
+  .contact__subtitle {
+    font-size: 18px;
+  }
+
+  .contact__buttons-block {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .swiper-button-prev::after,
