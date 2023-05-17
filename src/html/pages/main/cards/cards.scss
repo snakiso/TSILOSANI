@@ -50,6 +50,10 @@
         color: white;
       }
 
+      .cards__card-list--date::before {
+        background-color: white;
+      }
+
       .cards__card-date-bottom {
         bottom: -50px;
       }
@@ -83,6 +87,7 @@
     font-weight: 800;
     font-size: 30px;
     letter-spacing: 0.04em;
+    min-width: 140px;
 
     &--green-bg {
       background-color: $color-secondary;
@@ -108,6 +113,7 @@
 
   &__card-date-block {
     display: flex;
+    justify-content: space-between;
   }
 
   &__card-date {
@@ -118,6 +124,11 @@
     letter-spacing: 0.04em;
     color: $color-secondary;
     display: block;
+
+    &--slim {
+      max-width: 60px;
+    }
+
   }
 
   &__card-date-bottom {
@@ -131,7 +142,7 @@
 
   &__card-place {
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     font-weight: 300;
     font-size: 12px;
     line-height: 2.17em;
@@ -178,8 +189,18 @@
     padding-left: $offset-main;
 
     &--date {
+      position: relative;
       max-width: 205px;
       margin: 0;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: $color-secondary;
+        left: -10px;
+      }
     }
   }
 
@@ -232,6 +253,83 @@
     &::after {
       height: 24px;
       width: 2px;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      &--date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__card {
+      &--date {
+        max-width: 620px;
+        width: 100%;
+        margin-bottom: 40px;
+        background-color: $color-secondary;
+
+        &::after {
+          visibility: visible;
+          bottom: -15%;
+        }
+      }
+    }
+
+    &__card-inner {
+      &--date {
+        padding: 24px 27px;
+      }
+    }
+
+    &__card-title {
+      min-width: 120px;
+
+      &--date {
+        color: white;
+        font-size: 28px;
+        line-height: 0.93em;
+      }
+    }
+
+    &__card-date {
+      &--slim {
+        max-width: 50px;
+      }
+
+      color: white;
+    }
+
+    &__card-place {
+      color: white;
+      bottom: 45%;
+    }
+
+    &__card-list {
+      &--date {
+        max-width: none;
+        padding-left: 20px;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__card-item {
+      &--date {
+        font-size: 14px;
+        line-height: 1.43em;
+        color: #FFFFFF;
+      }
+    }
+
+    &__button {
+      opacity: 1;
+      z-index: 2;
     }
   }
 
@@ -295,6 +393,10 @@
 
     &__card-inner {
       padding: 20px;
+
+      &--date {
+        padding: 24px 27px;
+      }
     }
 
     &__card-item {
@@ -303,6 +405,12 @@
 
       &:not(:last-child) {
         margin-bottom: 8px;
+      }
+
+      &--date {
+        font-size: 14px;
+        line-height: 1.43em;
+        color: #FFFFFF;
       }
     }
   }

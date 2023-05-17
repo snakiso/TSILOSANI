@@ -421,6 +421,10 @@ body {
   color: white;
 }
 
+.cards__card--date:hover .cards__card-list--date::before {
+  background-color: white;
+}
+
 .cards__card--date:hover .cards__card-date-bottom {
   bottom: -50px;
 }
@@ -450,6 +454,7 @@ body {
   font-weight: 800;
   font-size: 30px;
   letter-spacing: 0.04em;
+  min-width: 140px;
 }
 
 .cards__card-title--green-bg {
@@ -475,6 +480,7 @@ body {
 
 .cards__card-date-block {
   display: flex;
+  justify-content: space-between;
 }
 
 .cards__card-date {
@@ -485,6 +491,10 @@ body {
   letter-spacing: 0.04em;
   color: #22B856;
   display: block;
+}
+
+.cards__card-date--slim {
+  max-width: 60px;
 }
 
 .cards__card-date-bottom {
@@ -498,7 +508,7 @@ body {
 
 .cards__card-place {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   font-weight: 300;
   font-size: 12px;
   line-height: 2.17em;
@@ -545,8 +555,18 @@ body {
 }
 
 .cards__card-list--date {
+  position: relative;
   max-width: 205px;
   margin: 0;
+}
+
+.cards__card-list--date::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #22B856;
+  left: -10px;
 }
 
 .cards__card-item {
@@ -941,6 +961,71 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .cards__wrapper--date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards__card--date {
+    max-width: 620px;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #22B856;
+  }
+
+  .cards__card--date::after {
+    visibility: visible;
+    bottom: -15%;
+  }
+
+  .cards__card-inner--date {
+    padding: 24px 27px;
+  }
+
+  .cards__card-title {
+    min-width: 120px;
+  }
+
+  .cards__card-title--date {
+    color: white;
+    font-size: 28px;
+    line-height: 0.93em;
+  }
+
+  .cards__card-date {
+    color: white;
+  }
+
+  .cards__card-date--slim {
+    max-width: 50px;
+  }
+
+  .cards__card-place {
+    color: white;
+    bottom: 45%;
+  }
+
+  .cards__card-list--date {
+    max-width: none;
+    padding-left: 20px;
+  }
+
+  .cards__card-list--date::before {
+    display: none;
+  }
+
+  .cards__card-item--date {
+    font-size: 14px;
+    line-height: 1.43em;
+    color: #FFFFFF;
+  }
+
+  .cards__button {
+    opacity: 1;
+    z-index: 2;
+  }
+
   .reviews-slider {
     max-width: 620px;
     margin: auto;
@@ -1234,6 +1319,10 @@ body {
     padding: 20px;
   }
 
+  .cards__card-inner--date {
+    padding: 24px 27px;
+  }
+
   .cards__card-item {
     font-size: 16px;
     line-height: 1.25em;
@@ -1241,6 +1330,12 @@ body {
 
   .cards__card-item:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  .cards__card-item--date {
+    font-size: 14px;
+    line-height: 1.43em;
+    color: #FFFFFF;
   }
 
   .reviews__buttons {
