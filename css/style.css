@@ -38,6 +38,58 @@
   font-style: normal;
 }
 
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeIn.animated {
+  opacity: 1;
+}
+
+.fadeInDown {
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.fadeInDown.animated {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.2s;
+}
+
+.fadeInLeft.animated {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.fadeInUp.animated {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 0.2s;
+}
+
+.fadeInRight.animated {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
 .video__name,
 .form-block__subtitle,
 .exp__text,
@@ -134,6 +186,14 @@ body {
   display: block;
 }
 
+.title--margin-top {
+  margin-top: 10px;
+}
+
+.title--margin-bottom {
+  margin-bottom: 10px;
+}
+
 .title--secondary-slim {
   display: block;
   max-width: 650px;
@@ -142,7 +202,7 @@ body {
 .grid-chess {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 .grid-chess__img--mr {
@@ -192,6 +252,11 @@ body {
   color: white;
   cursor: pointer;
   transition: ease-in 0.2s;
+}
+
+.button:hover {
+  background-color: white;
+  color: #22B856;
 }
 
 .button--bg-none {
@@ -353,6 +418,8 @@ body {
 .hero__title {
   font-weight: 600;
   font-size: 45px;
+  padding-right: 20px;
+  overflow: hidden;
 }
 
 .hero__title-line {
@@ -725,7 +792,7 @@ body {
 }
 
 .reviews-slider__reviewer-review {
-  margin: 20px 0 30px 0;
+  margin: 30px 0 30px 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.38em;
@@ -788,12 +855,12 @@ body {
 }
 
 .reviews-slider__nav {
-  width: 100px;
+  width: 110px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   bottom: 0;
-  right: 130px;
+  right: 105px;
 }
 
 .exp__container {
@@ -1043,6 +1110,10 @@ body {
   font-weight: 700;
 }
 
+.count-number {
+  opacity: 0;
+}
+
 .page {
   position: relative;
   overflow-x: hidden;
@@ -1201,6 +1272,14 @@ body {
     padding-left: 10px;
   }
 
+  .title--margin-top {
+    margin-top: 5px;
+  }
+
+  .title--margin-bottom {
+    margin-bottom: 5px;
+  }
+
   .grid-chess {
     flex-direction: column;
     margin-bottom: 40px;
@@ -1243,6 +1322,29 @@ body {
 
   .grid-chess__text--price {
     padding: 0 20px;
+  }
+
+  .button:hover {
+    background-color: #22B856;
+    color: white;
+  }
+
+  .button--whatsapp:hover {
+    color: #22B856 !important;
+    background: none !important;
+  }
+
+  .button--whatsapp:hover .button__img--whatsapp {
+    filter: none;
+  }
+
+  .button--telegram:hover {
+    color: #0A8FF0 !important;
+    background: none !important;
+  }
+
+  .button--telegram:hover .button__img--telegram {
+    filter: none;
   }
 
   .button {

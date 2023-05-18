@@ -13,6 +13,16 @@
   cursor: pointer;
   transition: ease-in .2s;
 
+  &:hover {
+    background-color: white;
+    color: $color-secondary;
+
+    @include mobile {
+      background-color: $color-secondary;
+      color: white;
+    }
+  }
+
   &--bg-none {
     background: none;
     color: $color-secondary;
@@ -52,7 +62,16 @@
       background-color: $color-secondary  !important;
 
       .button__img--whatsapp {
-        filter: invert(213%) sepia(26) saturate(1%) hue-rotate(363deg) brightness(192%) contrast(91%)
+        filter: invert(213%) sepia(26) saturate(1%) hue-rotate(363deg) brightness(192%) contrast(91%);
+      }
+
+      @include mobile {
+        color: $color-secondary  !important;
+        background: none !important;
+
+        .button__img--whatsapp {
+          filter: none;
+        }
       }
     }
   }
@@ -72,9 +91,17 @@
       .button__img--telegram {
         filter: invert(213%) sepia(26) saturate(1%) hue-rotate(363deg) brightness(192%) contrast(91%)
       }
+
+      @include mobile {
+        color: #0A8FF0 !important;
+        background: none !important;
+
+        .button__img--telegram {
+          filter: none;
+        }
+      }
     }
   }
-
 
 
   @include mobile {

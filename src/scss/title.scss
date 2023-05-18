@@ -26,6 +26,14 @@
     @extend %text-settings;
   }
 
+  &--margin-top {
+    margin-top: 10px;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 10px;
+  }
+
   &--secondary-slim {
     display: block;
     @extend %text-settings;
@@ -52,11 +60,19 @@
       margin-top: 10px;
     }
 
-    &--secondary-slim{
+    &--secondary-slim {
       margin: 0;
       font-size: 16px;
       line-height: 1.25em;
       padding-left: 10px;
+    }
+
+    &--margin-top {
+      margin-top: 5px;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 5px;
     }
   }
 }

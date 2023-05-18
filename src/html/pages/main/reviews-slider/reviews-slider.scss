@@ -50,7 +50,7 @@
   }
 
   &__reviewer-review {
-    margin: 20px 0 30px 0;
+    margin: 30px 0 30px 0;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.38em;
@@ -115,12 +115,12 @@
   }
 
   &__nav {
-    width: 100px;
+    width: 110px;
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
-    right: 130px;
+    right: 105px;
   }
 
   @include tablet {
