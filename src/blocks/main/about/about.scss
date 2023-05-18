@@ -1,0 +1,7 @@
+.about {
+  margin-top: $offset-bigest;
+
+  @include mobile {
+    margin-top: 50px;
+  }
+}

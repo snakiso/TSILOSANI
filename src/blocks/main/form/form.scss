@@ -1,0 +1,124 @@
+.form-block {
+  position: relative;
+  margin: $offset-bigest 0;
+
+  &__bg {
+    background: url(../img/form-bg.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    // background-attachment: fixed;
+    background-size: cover;
+  }
+
+  &__inner {
+    background: $color-secondary;
+    min-height: 440px;
+  }
+
+  &__container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 65px 0;
+  }
+
+  &__title {
+    display: block;
+    font-weight: 800;
+    font-size: $size-subtitle;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 20px
+  }
+
+  &__subtitle {
+    @extend %text-settings;
+    font-weight: 300;
+    color: white;
+  }
+
+  &__input-box {
+    display: flex;
+    justify-content: center;
+    margin: $offset-main 0;
+  }
+
+  &__input-plus {
+    width: 80px;
+    height: 50px;
+    background: #EDEDED;
+    border-radius: 30px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+  }
+
+  &__input {
+    height: 50px;
+    width: 385px;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    padding-left: 35px;
+    outline: none;
+    font-family: 'MuseoSansCyrl';
+    font-size: $size-mobile-text;
+
+    &::placeholder {
+      font-size: $size-mobile-text;
+      line-height: 1.38em;
+      letter-spacing: 0.02em;
+      color: #444444;
+    }
+  }
+
+  &__privacy,
+  &__privacy-link {
+    font-size: 14px;
+    line-height: 1.57em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+
+  &__privacy {
+    max-width: 570px;
+    margin: 20px auto 0 auto;
+  }
+
+  @include mobile {
+    margin: 50px 0;
+
+    &__bg {
+      background-position-x: 33%;
+    }
+
+    &__title {
+      font-size: $size-mobile-subtitle;
+    }
+
+    &__container {
+      padding: 90px 25px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 1.43em;
+    }
+
+    &__input {
+      width: 240px;
+      font-size: 14px;
+      padding-left: 10px;
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 1.41em;
+      }
+    }
+  }
+}

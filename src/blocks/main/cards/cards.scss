@@ -1,0 +1,429 @@
+.cards {
+  margin-bottom: $offset-bigest;
+
+
+  &__card {
+    position: relative;
+    grid-column: 4 span;
+    display: flex;
+    flex-direction: column;
+
+    &--grey-bg {
+      background: #F7F7F7;
+      border-radius: 20px;
+    }
+  }
+
+  &__card--date {
+    position: relative;
+    transition: ease-in .1s;
+    min-height: 190px;
+    margin-bottom: 50px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 135px;
+      height: 77px;
+      background-image: url(../img/card-date-vector.png);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -100%;
+      transition: ease-in .1s;
+      visibility: hidden;
+    }
+
+    &:hover {
+      min-height: 240px;
+      margin-bottom: 0;
+      background-color: $color-secondary;
+
+      &::after {
+        visibility: visible;
+        bottom: -28px;
+      }
+
+      .cards__card-place,
+      .cards__card-date,
+      .cards__card-title--date,
+      .cards__card-item--date {
+        color: white;
+      }
+
+      .cards__card-list--date::before {
+        background-color: white;
+      }
+
+      .cards__card-date-bottom {
+        bottom: -50px;
+      }
+
+      .cards__button {
+        bottom: -10px;
+        opacity: 1;
+        z-index: 3;
+      }
+    }
+  }
+
+  &__wrapper {
+    &--slider {
+      width: auto;
+    }
+  }
+
+  &__card-inner {
+    padding: 40px 30px;
+
+    &--date {
+      min-height: 190px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__card-title {
+    position: relative;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    min-width: 140px;
+
+    &--green-bg {
+      background-color: $color-secondary;
+      color: white;
+      padding: 0 8px;
+      border-radius: 2px;
+    }
+
+    &--own-style {
+      color: $color-main;
+      padding-left: 8px;
+      display: block;
+    }
+
+    &--date {
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 0.76em;
+      letter-spacing: 0.06em;
+      color: $color-secondary;
+    }
+  }
+
+  &__card-date-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card-date {
+    margin-top: -5px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.17em;
+    letter-spacing: 0.04em;
+    color: $color-secondary;
+    display: block;
+
+    &--slim {
+      max-width: 60px;
+    }
+
+  }
+
+  &__card-date-bottom {
+    position: relative;
+    left: 0;
+    bottom: 2px;
+    z-index: -1;
+    max-width: 100%;
+    transition: ease-in .2s;
+  }
+
+  &__card-place {
+    position: absolute;
+    bottom: 20px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2.17em;
+    letter-spacing: 0.04em;
+    color: $color-secondary;
+  }
+
+  &__card-text {
+    position: relative;
+    padding-left: 8px;
+    @extend %text-settings;
+    margin-top: $offset-middle;
+    font-weight: 300;
+    flex: 1 0 auto;
+    max-width: 400px;
+
+    &--tight {
+      max-width: 335px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 2px;
+      background-color: $color-secondary;
+      top: -20px;
+      left: 8px;
+      border-radius: 5px;
+    }
+  }
+
+  &__card-img {
+    width: 100%;
+    display: block;
+    flex: 0 1 auto;
+  }
+
+  &__pagination {
+    display: none;
+  }
+
+  &__card-list {
+    padding-left: $offset-main;
+
+    &--date {
+      position: relative;
+      max-width: 205px;
+      margin: 0;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: $color-secondary;
+        left: -10px;
+      }
+    }
+  }
+
+  &__card-item {
+    @extend %text-settings;
+    font-weight: 300;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &--date {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.38em;
+      letter-spacing: 0.02em;
+      color: $color-secondary;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    opacity: 0;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      left: 50%;
+      top: 50%;
+      background-color: white;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 24px;
+      height: 2px;
+    }
+
+    &::after {
+      height: 24px;
+      width: 2px;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      &--date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__card--date {
+
+      &:hover {
+        min-height: 190px;
+        margin-bottom: 40px;
+        background-color: $color-secondary;
+
+        &::after {
+          bottom: -15%;
+        }
+      }
+    }
+
+    &__card {
+      &--date {
+        max-width: 620px;
+        width: 100%;
+        margin-bottom: 40px;
+        background-color: $color-secondary;
+
+        &::after {
+          visibility: visible;
+          bottom: -15%;
+        }
+      }
+    }
+
+    &__card-inner {
+      &--date {
+        padding: 24px 27px;
+      }
+    }
+
+    &__card-title {
+      min-width: 120px;
+
+      &--date {
+        color: white;
+        font-size: 28px;
+        line-height: 0.93em;
+      }
+    }
+
+    &__card-date {
+      &--slim {
+        max-width: 50px;
+      }
+
+      color: white;
+    }
+
+    &__card-place {
+      color: white;
+      bottom: 45%;
+    }
+
+    &__card-list {
+      &--date {
+        max-width: none;
+        padding-left: 20px;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__card-item {
+      &--date {
+        font-size: 14px;
+        line-height: 1.43em;
+        color: #FFFFFF;
+      }
+    }
+
+    &__button {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: $offset-middle;
+
+    &--slider {
+      position: relative;
+
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+
+      &--slider {
+        column-gap: 0;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
+      }
+    }
+
+    &__card {
+      margin-bottom: $offset-middle;
+
+      &--slide {
+        flex-shrink: 1;
+        min-height: 470px;
+      }
+
+      &--slide-fs-0 {
+        flex-shrink: 0;
+        min-height: 200px;
+      }
+    }
+
+    &__card-img {
+      display: none;
+
+      &--slide {
+        display: block;
+        width: 250px;
+        flex: 0 1 auto;
+      }
+    }
+
+    &__card-title {
+      font-size: 26px;
+      line-height: 1.2em;
+    }
+
+    &__card-text {
+      max-width: none;
+      font-size: 16px;
+      line-height: 1.25em;
+      flex: 1 0 auto;
+      margin-bottom: 0;
+    }
+
+    &__card-inner {
+      padding: 20px;
+
+      &--date {
+        padding: 24px 27px;
+      }
+    }
+
+    &__card-item {
+      font-size: 16px;
+      line-height: 1.25em;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      &--date {
+        font-size: 14px;
+        line-height: 1.43em;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

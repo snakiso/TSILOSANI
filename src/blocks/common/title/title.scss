@@ -1,0 +1,78 @@
+.title {
+  margin-bottom: $offset-big;
+
+  &--big {
+    margin: 30px 0 0 0;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.31em;
+    letter-spacing: 0.05em;
+    color: $color-main;
+    text-transform: uppercase;
+  }
+
+  &--own {
+    font-weight: 800;
+    margin: 0;
+    font-size: $size-title;
+    line-height: 1.33em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-main;
+  }
+
+  &--secondary {
+    display: block;
+    @extend %text-settings;
+  }
+
+  &--margin-top {
+    margin-top: 10px;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 10px;
+  }
+
+  &--secondary-slim {
+    display: block;
+    @extend %text-settings;
+    max-width: 650px;
+  }
+
+  @include mobile {
+    margin-bottom: $offset-middle;
+
+    &--big {
+      font-size: 26px;
+      line-height: 1.15em;
+    }
+
+    &--own {
+      font-size: $size-mobile-title;
+      line-height: 1.58em;
+      padding-left: 10px;
+    }
+
+    &--secondary {
+      font-size: 16px;
+      line-height: 1.5em;
+      margin-top: 10px;
+    }
+
+    &--secondary-slim {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.25em;
+      padding-left: 10px;
+    }
+
+    &--margin-top {
+      margin-top: 5px;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 5px;
+    }
+  }
+}

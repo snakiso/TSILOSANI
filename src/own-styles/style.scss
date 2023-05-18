@@ -1,0 +1,58 @@
+@import '../own-styles/fonts';
+@import '../blocks/common/animations/animations';
+@import '../own-styles/vars';
+@import '../own-styles/breakpoints';
+@import '../blocks/common/green-line/green-line';
+@import '../blocks/common/title/title';
+@import '../blocks/common/grid-chess/grid-chess';
+@import '../blocks/common/button/button';
+@import '../blocks/common/contact-lane/contact-lane';
+@import '../blocks/common/header/header';
+@import '../blocks/main/hero/hero';
+@import '../blocks/main/details/details';
+@import '../blocks/main/cards/cards';
+@import '../blocks/main/about/about';
+@import '../blocks/main/reviews-slider/reviews';
+@import '../blocks/main/reviews-slider/reviews-slider';
+@import '../blocks/main/exp/exp';
+@import '../blocks/main/form/form';
+@import '../blocks/main/video/video';
+@import '../blocks/main/contact/contact';
+@import '../blocks/common/slider/slider';
+@import '../blocks/common/count-number/count-number';
+@import '../blocks/main/filmstrip/filmstrip';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MuseoSansCyrl';
+  margin: 0;
+}
+
+.page {
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: $offset-main;
+}
+
+.wrapper {
+  max-width: $container-width;
+  margin: auto;
+  padding: 0 $offset-main;
+
+  @include mobile {
+    padding: 0 15px;
+  }
+}
