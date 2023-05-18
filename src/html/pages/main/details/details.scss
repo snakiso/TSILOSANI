@@ -1,5 +1,4 @@
 .details {
-  margin-bottom: $offset-bigest;
   padding: 10px 0;
   border-top: 1px solid rgba(229, 229, 229, 1);
 
@@ -38,7 +37,7 @@
 
   @include mobile {
     border: none;
-    margin-bottom: $offset-middle;
+    margin-bottom: 50px;
 
     &__inner {
       display: flex;

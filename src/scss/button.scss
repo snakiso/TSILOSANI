@@ -14,7 +14,7 @@
   transition: ease-in .2s;
 
   &:hover {
-    background-color: white;
+    background: none;
     color: $color-secondary;
 
     @include mobile {
@@ -44,8 +44,9 @@
     margin: $offset-middle auto 0 auto;
   }
 
-  .button__img {
+  &__img {
     margin-right: 10px;
+    transition: ease-in .2s;
   }
 
   &--whatsapp {
@@ -109,7 +110,7 @@
     font-size: 14px;
 
     &--margin-top {
-      margin: 20px auto;
+      margin: 20px auto !important;
     }
 
     &--centered {

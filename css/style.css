@@ -255,7 +255,7 @@ body {
 }
 
 .button:hover {
-  background-color: white;
+  background: none;
   color: #22B856;
 }
 
@@ -280,8 +280,9 @@ body {
   margin: 40px auto 0 auto;
 }
 
-.button .button__img {
+.button__img {
   margin-right: 10px;
+  transition: ease-in 0.2s;
 }
 
 .button--whatsapp {
@@ -434,7 +435,6 @@ body {
 }
 
 .details {
-  margin-bottom: 100px;
   padding: 10px 0;
   border-top: 1px solid rgb(229, 229, 229);
 }
@@ -701,7 +701,6 @@ body {
   transform: translateX(-50%);
   bottom: -10px;
   opacity: 0;
-  transition: ease-in 0.2s;
 }
 
 .cards__button::before,
@@ -1114,6 +1113,35 @@ body {
   opacity: 0;
 }
 
+.filmstrip {
+  margin-bottom: 100px;
+}
+
+.filmstrip__slide {
+  background-image: url(../img/film-slide.jpg);
+  flex-shrink: 1;
+  width: auto;
+}
+
+.filmstrip__slide-inner {
+  display: flex;
+  padding: 130px 25px;
+}
+
+.filmstrip__img {
+  display: block;
+  border-radius: 20px;
+}
+
+.filmstrip__img--margin {
+  margin-right: 20px;
+}
+
+.filmstrip__pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .page {
   position: relative;
   overflow-x: hidden;
@@ -1353,7 +1381,7 @@ body {
   }
 
   .button--margin-top {
-    margin: 20px auto;
+    margin: 20px auto !important;
   }
 
   .button--centered {
@@ -1446,7 +1474,7 @@ body {
 
   .details {
     border: none;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .details__inner {
@@ -1575,6 +1603,14 @@ body {
     font-size: 14px;
     line-height: 1.43em;
     color: #FFFFFF;
+  }
+
+  .about {
+    margin-top: 50px;
+  }
+
+  .reviews {
+    margin-top: 50px;
   }
 
   .reviews__buttons {
@@ -1710,6 +1746,10 @@ body {
     line-height: 1.25em;
   }
 
+  .form-block {
+    margin: 50px 0;
+  }
+
   .form-block__bg {
     background-position-x: 33%;
   }
@@ -1782,6 +1822,24 @@ body {
   .swiper-button-next::after {
     font-size: 16px;
     font-weight: 700;
+  }
+
+  .filmstrip {
+    margin-bottom: 50px;
+  }
+
+  .filmstrip__slide {
+    flex-shrink: 0;
+    background-size: contain;
+  }
+
+  .filmstrip__slide-inner {
+    justify-content: center;
+    padding: 51px 15px;
+  }
+
+  .filmstrip__img {
+    max-width: 160px;
   }
 
   .wrapper {

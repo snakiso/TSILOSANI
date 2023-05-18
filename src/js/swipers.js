@@ -52,3 +52,28 @@ const swiper3 = new Swiper('.reviews-slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+
+const swiper4 = new Swiper('.filmstrip-slider', {
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: -1,
+  autoWidth: false,
+  centeredSlides: true,
+  freemode: true,
+  speed: 8000,
+  autoplay: {
+    delay: 10,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 'auto',
+      centeredSlides: false,
+    },
+  },
+  pagination: {
+    el: '.filmstrip__pagination',
+    clickable: true,
+  },
+});

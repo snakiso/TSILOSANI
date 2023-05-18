@@ -91,6 +91,7 @@
   }
 
   @include mobile {
+    margin: 50px 0;
 
     &__bg {
       background-position-x: 33%;

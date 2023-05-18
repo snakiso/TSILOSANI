@@ -1,0 +1,46 @@
+.filmstrip {
+  margin-bottom: $offset-bigest;
+
+  &__slide {
+    background-image: url(../img/film-slide.jpg);
+    flex-shrink: 1;
+    width: auto;
+  }
+
+  &__slide-inner {
+    display: flex;
+    padding: 130px 25px;
+  }
+
+  &__img {
+    display: block;
+    border-radius: 20px;
+
+    &--margin {
+      margin-right: 20px;
+    }
+  }
+
+  &__pagination {
+    text-align: center;
+    margin-top: $offset-main;
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+
+    &__slide {
+      flex-shrink: 0;
+      background-size: contain;
+    }
+
+    &__slide-inner {
+      justify-content: center;
+      padding: 51px 15px;
+    }
+
+    &__img {
+      max-width: 160px;
+    }
+  }
+}

@@ -9,6 +9,9 @@
   }
 
   @include mobile {
+
+    margin-top: 50px;
+
     &__buttons {
       max-width: 200px;
       height: 100px;

@@ -3,6 +3,9 @@ let numbers2 = document.querySelectorAll('.count-number--2');
 let numberBlock = document.querySelector('.details__inner');
 let expBlock = document.querySelector('.exp__container');
 
+
+
+
 for (let i = 0; i < numbers1.length; i++) {
   $(document).ready(function () {
     var show = true;
@@ -41,3 +44,5 @@ for (let i = 0; i < numbers2.length; i++) {
     });
   });
 }
+
+
