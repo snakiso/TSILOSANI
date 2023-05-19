@@ -1701,6 +1701,7 @@ body {
     width: 100%;
     height: 1px;
     background-color: #E5E5E5;
+    z-index: -1;
   }
 
   .exp__number {
