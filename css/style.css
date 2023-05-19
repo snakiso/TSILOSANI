@@ -121,6 +121,7 @@
 
 .title {
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .title--big {
@@ -965,6 +966,7 @@
 
 .video__wrapper {
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .video__box {
@@ -995,6 +997,8 @@
 }
 
 .video__name {
+  position: relative;
+  z-index: -1;
   font-weight: 600;
   color: black;
   margin-top: 20px;

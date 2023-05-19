@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230518171922" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230518171922"></script>
-  <script src="https://unpkg.com/imask?_v=20230518171922"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20230518171922"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20230518171922" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230519100008" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230519100008"></script>
+  <script src="https://unpkg.com/imask?_v=20230519100008"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20230519100008"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20230519100008" />
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230518171922">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230519100008">
   <title>TSILOSANI</title>
 </head>
 
@@ -115,15 +115,15 @@
   <div class="filmstrip__pagination"></div>
 </div>
       <div class="cards">
-  <div class="cards__wrapper wrapper grid">
-    <div class="cards__card">
+  <div class="cards__wrapper wrapper grid" data-animation-container>
+    <div class="cards__card fadeInRight" data-animation-child data-duration=".8" data-delay="0">
       <div class="cards__card-title"><span class="cards__card-title--green-bg">Международный</span> <span
           class="cards__card-title--own-style">стандарт качества</span></div>
       <p class="cards__card-text cards__card-text--tight">Процедура проводится врачом мирового уровня с использованием последних зарубежных
         достижений.</p>
       <img class="cards__card-img" src="img/cards/card-1.jpg" alt="">
     </div>
-    <div class="cards__card">
+    <div class="cards__card fadeInRight" data-animation-child data-duration=".8" data-delay=".2">
       <div class="cards__card-title"><span class="cards__card-title--green-bg">Безболезненно</span> <span
           class="cards__card-title--own-style">и без реабилитации</span></div>
       <p class="cards__card-text cards__card-text--tight">Местная анестезия, малая инвазивность метода, отсутствие отеков. Возвращайтесь к
@@ -131,7 +131,7 @@
         через несколько дней.</p>
       <img class="cards__card-img" src="img/cards/card-2.jpg" alt="">
     </div>
-    <div class="cards__card">
+    <div class="cards__card fadeInRight" data-animation-child data-duration=".8" data-delay=".4">
       <div class="cards__card-title"><span class="cards__card-title--green-bg">Счетчик графтов</span> <span
           class="cards__card-title--own-style">в ваших руках</span></div>
       <p class="cards__card-text cards__card-text--tight">Вы можете быть уверены в точном количестве графтов, которые будут вам пересажены. Во
@@ -144,14 +144,14 @@
 </div>
       <section class="about">
   <div class="wrapper">
-    <div class="title green-line">
-      <h2 class="title--own">О КЛИНИКЕ</h2>
-      <p class="title--secondary-slim title--margin-top">Комфортная мебель из Италии, нестандартные дизайнерские
+    <div class="title green-line" data-animation-container> 
+      <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay="0">О КЛИНИКЕ</h2>
+      <p class="title--secondary-slim title--margin-top fadeInLeft" data-animation-child data-duration="1" data-delay=".2">Комфортная мебель из Италии, нестандартные дизайнерские
         решения - все для самых приятных впечатлений наших пациентов</p>
     </div>
-    <div class="grid-chess flex">
-      <img class="grid-chess__img grid-chess__img--mr" src="img/grid-chess/photo.jpg" alt="">
-      <div class="grid-chess__content">
+    <div class="grid-chess flex" data-animation-container>
+      <img class="grid-chess__img grid-chess__img--mr fadeInLeft" src="img/grid-chess/photo.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+      <div class="grid-chess__content fadeInRight" data-animation-child data-duration="1" data-delay="0">
         <span class="grid-chess__title">Место силы ваших волос</span>
         <p class="grid-chess__text">Добро пожаловать в атмосферу профессиональной заботы и преображения! Всего одна 4-5
           часовая процедура пересадки вернет
@@ -162,9 +162,9 @@
           есть на данный момент в мире.</p>
       </div>
     </div>
-    <div class="grid-chess grid-chess--reverse flex">
-      <img class="grid-chess__img grid-chess__img--ml" src="img/grid-chess/photo-1.jpg" alt="">
-      <div class="grid-chess__content">
+    <div class="grid-chess grid-chess--reverse flex" data-animation-container>
+      <img class="grid-chess__img grid-chess__img--ml fadeInRight" src="img/grid-chess/photo-1.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+      <div class="grid-chess__content fadeInLeft" data-animation-child data-duration="1" data-delay="0">
         <span class="grid-chess__title">A.TSILOSANI HAIR TRANSPLANT INSTITUTE</span>
         <p class="grid-chess__text">Институт Трансплантации Волос А.Цилосани это не просто клиника, а бережно
           продуманная экосистема.</p>
@@ -173,9 +173,9 @@
           удобные комнаты отдыха, ресторан с террасой, кабинеты врачей, психолога и комната для медитаций.</p>
       </div>
     </div>
-    <div class="grid-chess flex">
-      <img class="grid-chess__img grid-chess__img--mr" src="img/grid-chess/photo-2.jpg" alt="">
-      <div class="grid-chess__content">
+    <div class="grid-chess flex" data-animation-container>
+      <img class="grid-chess__img grid-chess__img--mr fadeInLeft" src="img/grid-chess/photo-2.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+      <div class="grid-chess__content fadeInRight" data-animation-child data-duration="1" data-delay="0">
         <span class="grid-chess__title">АТМОСФЕРА ДОВЕРИЯ, КОМФОРТА
           И&nbsp;ЗАБОТЫ</span>
         <p class="grid-chess__text">Каждый сотрудник нашей большой профессиональной команды прошел обучение и
@@ -186,9 +186,9 @@
           вопросе&nbsp;-&nbsp;отличительные черты всех сотрудников клиники.</p>
       </div>
     </div>
-    <div class="grid-chess grid-chess--reverse grid-chess--last flex">
-      <img class="grid-chess__img grid-chess__img--ml" src="img/grid-chess/photo-3.jpg" alt="">
-      <div class="grid-chess__content">
+    <div class="grid-chess grid-chess--reverse grid-chess--last flex" data-animation-container>
+      <img class="grid-chess__img grid-chess__img--ml fadeInRight" src="img/grid-chess/photo-3.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+      <div class="grid-chess__content fadeInLeft" data-animation-child data-duration="1" data-delay="0">
         <span class="grid-chess__title">A.TSILOSANI HAIR TRANSPLANT INSTITUTE</span>
         <p class="grid-chess__text">Почему наши пациенты проводят в клинике больше времени, чем этого требует процедура?
           Все дело в особой атмосфере и
@@ -208,9 +208,9 @@
 </section>
       <section class="reviews">
   <div class="wrapper">
-    <div class="title green-line">
-      <span class="title--secondary-slim title--margin-bottom">Реальные</span>
-      <h2 class="title--own">Отзывы</h2>
+    <div class="title green-line" data-animation-container>
+      <span class="title--secondary-slim title--margin-bottom fadeInLeft" data-animation-child data-duration="1" data-delay="0">Реальные</span>
+      <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay=".4">Отзывы</h2>
     </div>
     <div class="reviews-slider">
       <div class="swiper-wrapper">
@@ -291,35 +291,35 @@
 </section>
       <section class="video">
   <div class="wrapper">
-    <div class="title green-line">
-      <h2 class="title--own">Видео</h2>
+    <div class="title green-line" data-animation-container>
+      <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay="0">Видео</h2>
     </div>
   </div>
-  <div class="video__wrapper wrapper grid">
-    <a href="https://www.youtube.com/watch?v=6uJoN_I9ebQ&list=RD6uJoN_I9ebQ&start_radio=1" class="video__box"
-      data-fancybox="video-gallery">
+  <div class="video__wrapper wrapper grid" data-animation-container>
+    <a href="https://www.youtube.com/watch?v=6uJoN_I9ebQ&list=RD6uJoN_I9ebQ&start_radio=1" class="video__box fadeInUp"
+      data-fancybox="video-gallery" data-animation-child data-duration=".5" data-delay="0">
       <div class="video__poster">
         <img class="video__bg " src="img/video/video_bg.jpg" alt="">
         <img class="video__play" src="img/video/play.svg" alt="">
       </div>
-      <span class="video__name">Добро пожаловать в клинику</span>
+      <span class="video__name fadeInUp" data-animation-child data-duration=".8" data-delay=".4">Добро пожаловать в клинику</span>
     </a>
-    <a href="https://www.youtube.com/watch?v=Gsy5sJy5_34&list=RDGsy5sJy5_34&start_radio=1" class="video__box"
-      data-fancybox="video-gallery">
+    <a href="https://www.youtube.com/watch?v=Gsy5sJy5_34&list=RDGsy5sJy5_34&start_radio=1" class="video__box fadeInUp"
+      data-fancybox="video-gallery" data-animation-child data-duration=".5" data-delay=".2">
       <div class="video__poster">
         <img class="video__bg " src="img/video/video_bg-1.jpg" alt="">
         <img class="video__play" src="img/video/play.svg" alt="">
       </div>
-      <span class="video__name">Полет по клинике</span>
+      <span class="video__name fadeInUp" data-animation-child data-duration=".8" data-delay=".6">Полет по клинике</span>
     </a>
   </div>
   <button class="button button--centered">Консультация</button>
 </section>
       <section class="dates">
         <div class="wrapper">
-          <div class="title green-line">
-            <span class="title--secondary-slim">Ближайшие</span>
-            <h2 class="title--own">ДАТЫ ПРИЕЗДА</h2>
+          <div class="title green-line" data-animation-container>
+            <span class="title--secondary-slim fadeInLeft" data-animation-child data-duration="1" data-delay="0">Ближайшие</span>
+            <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay=".4">ДАТЫ ПРИЕЗДА</h2>
           </div>
         </div>
         <div class="cards">
@@ -378,9 +378,9 @@
       </section>
       <section class="exp">
   <div class="wrapper">
-    <div class="title green-line">
-      <h2 class="title--own">25 лет опыта</h2>
-      <span class="title--secondary-slim title--margin-top">Пересадка волос от&nbsp;международного&nbsp;эксперта</span>
+    <div class="title green-line" data-animation-container>
+      <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay="0">25 лет опыта</h2>
+      <span class="title--secondary-slim title--margin-top fadeInLeft" data-animation-child data-duration="1" data-delay=",4">Пересадка волос от&nbsp;международного&nbsp;эксперта</span>
     </div>
     <div class="exp__container grid">
       <div class="exp__box">
@@ -402,9 +402,9 @@
         <span class="exp__text">стран, где расположены клиники</span>
       </div>
     </div>
-    <div class="grid-chess flex">
-      <img class="grid-chess__img grid-chess__img--mr" src="img/grid-chess/photo-4.jpg" alt="">
-      <div class="grid-chess__content">
+    <div class="grid-chess flex" data-animation-container>
+      <img class="grid-chess__img grid-chess__img--mr fadeInLeft" src="img/grid-chess/photo-4.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+      <div class="grid-chess__content fadeInRight" data-animation-child data-duration="1" data-delay="0">
         <span class="grid-chess__title">международные стандарты трансплантации волос</span>
         <p class="grid-chess__text">Доктор А.Цилосани: «Более 25 лет я посвятил совершенствованию технологии
           трансплантации волос, что позволяет добиваться
@@ -421,9 +421,9 @@
           уже через 4 часа процедуры.</p>
       </div>
     </div>
-    <div class="grid-chess grid-chess--reverse grid-chess--last flex">
-      <img class="grid-chess__img grid-chess__img--ml" src="img/grid-chess/photo-5.jpg" alt="">
-      <div class="grid-chess__content">
+    <div class="grid-chess grid-chess--reverse grid-chess--last flex" data-animation-container>
+      <img class="grid-chess__img grid-chess__img--ml fadeInRight" src="img/grid-chess/photo-5.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+      <div class="grid-chess__content fadeInLeft" data-animation-child data-duration="1" data-delay="0">
         <span class="grid-chess__title">РОСТ ВОЛОС НА ВСЮ жИЗНЬ И НИКАК ИНАЧЕ</span>
         <p class="grid-chess__text">Современная процедура трансплантации — это ювелирная технология, которая требует
           огромного опыта и знаний врача,
@@ -458,8 +458,8 @@
   </div>
 </section>
       <div class="cards-slider cards cards--slider">
-  <div class="cards__wrapper cards__wrapper--slider wrapper grid swiper-wrapper">
-    <div class="cards__card cards__card--slide swiper-slide">
+  <div class="cards__wrapper cards__wrapper--slider wrapper grid swiper-wrapper" data-animation-container>
+    <div class="cards__card cards__card--slide swiper-slide fadeInRight" data-animation-child data-duration="1" data-delay="0">
       <div class="cards__card-title">
         <span class="cards__card-title--own-style">Все</span>
         <span class="cards__card-title--own-style">Методы</span>
@@ -467,14 +467,14 @@
       <p class="cards__card-text">Мы применяем 6 разных современных методов, которые подбираются индивидуально</p>
       <img class="cards__card-img cards__card-img--slide" src="img/cards/card-4.jpg" alt="">
     </div>
-    <div class="cards__card cards__card--slide swiper-slide">
+    <div class="cards__card cards__card--slide swiper-slide fadeInRight" data-animation-child data-duration="1" data-delay=".2">
       <div class="cards__card-title"><span class="cards__card-title--own-style">Любой объем</span> <span
           class="cards__card-title--own-style">за один день</span></div>
       <p class="cards__card-text">Профессору А.Цилосани принадлежит мировой рекорд по максимальному числу пересаженных
         графтов.</p>
       <img class="cards__card-img cards__card-img--slide" src="img/cards/card-5.jpg" alt="">
     </div>
-    <div class="cards__card cards__card--slide swiper-slide">
+    <div class="cards__card cards__card--slide swiper-slide fadeInRight" data-animation-child data-duration="1" data-delay=".4">
       <div class="cards__card-title"><span class="cards__card-title--own-style">Пожизненная</span> <span
           class="cards__card-title--own-style">гарантия</span></div>
       <p class="cards__card-text">Только лучшие методы с доказанной эффективностью! Бессрочная юридическая гарантия на
@@ -507,13 +507,13 @@
 </section>
       <section class="price">
         <div class="wrapper">
-          <div class="title green-line">
-            <h2 class="title--own">В стоимость входит</h2>
+          <div class="title green-line" data-animation-container>
+            <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay="0">В стоимость входит</h2>
           </div>
         </div>
         <div class="cards cards-slider-2 cards--slider">
-  <div class="cards__wrapper cards__wrapper--slider wrapper grid swiper-wrapper">
-    <div class="cards__card cards__card--slide-fs-0 swiper-slide cards__card--grey-bg">
+  <div class="cards__wrapper cards__wrapper--slider wrapper grid swiper-wrapper" data-animation-container>
+    <div class="cards__card cards__card--slide-fs-0 swiper-slide cards__card--grey-bg fadeInRight" data-animation-child data-duration="1" data-delay="0">
       <div class="cards__card-inner">
         <div class="cards__card-title">
           <span class="cards__card-title--green-bg">Отель</span>
@@ -525,7 +525,7 @@
         </ul>
       </div>
     </div>
-    <div class="cards__card cards__card--slide-fs-0 swiper-slide cards__card--grey-bg">
+    <div class="cards__card cards__card--slide-fs-0 swiper-slide cards__card--grey-bg fadeInRight" data-animation-child data-duration="1" data-delay=".2">
       <div class="cards__card-inner">
         <div class="cards__card-title">
           <span class="cards__card-title--green-bg">Трансфер</span>
@@ -537,7 +537,7 @@
         </ul>
       </div>
     </div>
-    <div class="cards__card cards__card--slide-fs-0 swiper-slide cards__card--grey-bg">
+    <div class="cards__card cards__card--slide-fs-0 swiper-slide cards__card--grey-bg fadeInRight" data-animation-child data-duration="1" data-delay=".4">
       <div class="cards__card-inner">
         <div class="cards__card-title">
           <span class="cards__card-title--green-bg">Обед</span>
@@ -553,18 +553,18 @@
   <div class="cards__pagination swiper-pagination-1"></div>
 </div>
         <div class="wrapper">
-          <div class="grid-chess flex">
-  <img class="grid-chess__img grid-chess__img--mr" src="img/grid-chess/photo-6.jpg" alt="">
-  <div class="grid-chess__content grid-chess__content--price">
+          <div class="grid-chess flex" data-animation-container>
+  <img class="grid-chess__img grid-chess__img--mr fadeInLeft" src="img/grid-chess/photo-6.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+  <div class="grid-chess__content grid-chess__content--price fadeInRight" data-animation-child data-duration="1" data-delay="0">
     <span class="grid-chess__title grid-chess__title--price">Узнайте индивидуальную
       цену&nbsp;онлайн</span>
     <p class="grid-chess__text grid-chess__text--price">Все фото смотрит только лично профессор А.Цилосани</p>
     <button class="button button--margin-top">Расчет стоимости</button>
   </div>
 </div>
-<div class="grid-chess grid-chess--reverse flex">
-  <img class="grid-chess__img grid-chess__img--ml" src="img/grid-chess/photo-7.jpg" alt="">
-  <div class="grid-chess__content grid-chess__content--price">
+<div class="grid-chess grid-chess--reverse flex" data-animation-container>
+  <img class="grid-chess__img grid-chess__img--ml fadeInRight" src="img/grid-chess/photo-7.jpg" alt="" data-animation-child data-duration="1" data-delay="0">
+  <div class="grid-chess__content grid-chess__content--price fadeInLeft" data-animation-child data-duration="1" data-delay="0">
     <span class="grid-chess__title grid-chess__title--price">Запишитесь на очную консультацию в клинику</span>
     <p class="grid-chess__text grid-chess__text--price">Прием идет только по предварительной записи</p>
     <button class="button button--margin-top">Записаться</button>
@@ -650,13 +650,13 @@
 </section>
     </main>
   </div>
-  <script src="js/jQuery2.2.0.js?_v=20230518171922"></script>
-  <script src="js/ScrollAnimations.js?_v=20230518171922"></script>
-  <script src="js/animations.js?_v=20230518171922"></script>
-  <script src="js/jquery.spincrement.min.js?_v=20230518171922"></script>
-  <script src="js/numberAnimation.js?_v=20230518171922"></script>
-  <script src="js/video.js?_v=20230518171922"></script>
-  <script src="js/swipers.js?_v=20230518171922"></script>
+  <script src="js/jQuery2.2.0.js?_v=20230519100008"></script>
+  <script src="js/ScrollAnimations.js?_v=20230519100008"></script>
+  <script src="js/animations.js?_v=20230519100008"></script>
+  <script src="js/jquery.spincrement.min.js?_v=20230519100008"></script>
+  <script src="js/numberAnimation.js?_v=20230519100008"></script>
+  <script src="js/video.js?_v=20230519100008"></script>
+  <script src="js/swipers.js?_v=20230519100008"></script>
 </body>
 
 </html>

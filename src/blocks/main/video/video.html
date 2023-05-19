@@ -1,25 +1,25 @@
 <section class="video">
   <div class="wrapper">
-    <div class="title green-line">
-      <h2 class="title--own">Видео</h2>
+    <div class="title green-line" data-animation-container>
+      <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay="0">Видео</h2>
     </div>
   </div>
-  <div class="video__wrapper wrapper grid">
-    <a href="https://www.youtube.com/watch?v=6uJoN_I9ebQ&list=RD6uJoN_I9ebQ&start_radio=1" class="video__box"
-      data-fancybox="video-gallery">
+  <div class="video__wrapper wrapper grid" data-animation-container>
+    <a href="https://www.youtube.com/watch?v=6uJoN_I9ebQ&list=RD6uJoN_I9ebQ&start_radio=1" class="video__box fadeInUp"
+      data-fancybox="video-gallery" data-animation-child data-duration=".5" data-delay="0">
       <div class="video__poster">
         <img class="video__bg " src="@img/video/video_bg.jpg" alt="">
         <img class="video__play" src="@img/video/play.svg" alt="">
       </div>
-      <span class="video__name">Добро пожаловать в клинику</span>
+      <span class="video__name fadeInUp" data-animation-child data-duration=".8" data-delay=".4">Добро пожаловать в клинику</span>
     </a>
-    <a href="https://www.youtube.com/watch?v=Gsy5sJy5_34&list=RDGsy5sJy5_34&start_radio=1" class="video__box"
-      data-fancybox="video-gallery">
+    <a href="https://www.youtube.com/watch?v=Gsy5sJy5_34&list=RDGsy5sJy5_34&start_radio=1" class="video__box fadeInUp"
+      data-fancybox="video-gallery" data-animation-child data-duration=".5" data-delay=".2">
       <div class="video__poster">
         <img class="video__bg " src="@img/video/video_bg-1.jpg" alt="">
         <img class="video__play" src="@img/video/play.svg" alt="">
       </div>
-      <span class="video__name">Полет по клинике</span>
+      <span class="video__name fadeInUp" data-animation-child data-duration=".8" data-delay=".6">Полет по клинике</span>
     </a>
   </div>
   <button class="button button--centered">Консультация</button>

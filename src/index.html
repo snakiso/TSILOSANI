@@ -18,9 +18,9 @@
       @@include('blocks/main/video/video.html')
       <section class="dates">
         <div class="wrapper">
-          <div class="title green-line">
-            <span class="title--secondary-slim">Ближайшие</span>
-            <h2 class="title--own">ДАТЫ ПРИЕЗДА</h2>
+          <div class="title green-line" data-animation-container>
+            <span class="title--secondary-slim fadeInLeft" data-animation-child data-duration="1" data-delay="0">Ближайшие</span>
+            <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay=".4">ДАТЫ ПРИЕЗДА</h2>
           </div>
         </div>
         @@include('blocks/main/cards/date-cards.html')
@@ -30,8 +30,8 @@
       @@include('blocks/main/form/form.html')
       <section class="price">
         <div class="wrapper">
-          <div class="title green-line">
-            <h2 class="title--own">В стоимость входит</h2>
+          <div class="title green-line" data-animation-container>
+            <h2 class="title--own fadeInLeft" data-animation-child data-duration="1" data-delay="0">В стоимость входит</h2>
           </div>
         </div>
         @@include('blocks/main/cards/price-cards.html')

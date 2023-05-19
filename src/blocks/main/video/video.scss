@@ -3,6 +3,7 @@
 
   &__wrapper {
     margin-bottom: $offset-middle;
+    overflow: hidden;
   }
 
   &__box {
@@ -33,6 +34,8 @@
   }
 
   &__name {
+    position: relative;
+    z-index: -1;
     font-weight: 600;
     @extend %text-settings;
     color: black;

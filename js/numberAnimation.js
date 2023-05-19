@@ -17,7 +17,7 @@ for (let i = 0; i < numbers1.length; i++) {
         $(numbers1[i]).css('opacity', '1');
         $(numbers1[i]).spincrement({
           thousandSeparator: ' ',
-          duration: 2000
+          duration: 3000
         });
         show = false;
       }
@@ -37,7 +37,7 @@ for (let i = 0; i < numbers2.length; i++) {
         $(numbers2[i]).css('opacity', '1');
         $(numbers2[i]).spincrement({
           thousandSeparator: ' ',
-          duration: 2000
+          duration: 3000
         });
         show = false;
       }
