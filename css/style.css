@@ -167,6 +167,10 @@
   margin-bottom: 90px;
 }
 
+.grid-chess__img {
+  border-radius: 10px;
+}
+
 .grid-chess__img--mr {
   margin-right: 30px;
 }
@@ -1806,8 +1810,9 @@ body {
   }
 
   .filmstrip__slide {
+    background-image: url(../img/film-slide-mobile.png);
     flex-shrink: 0;
-    background-size: contain;
+    background-size: auto;
   }
 
   .filmstrip__slide-inner {

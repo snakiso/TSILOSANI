@@ -46,6 +46,7 @@ const swiper3 = new Swiper('.reviews-slider', {
   slidesPerView: 1,
   spaceBetween: 50,
   autoWidth: false,
+  speed: 2000,
   centeredSlides: false,
   navigation: {
     nextEl: '.swiper-button-next',
