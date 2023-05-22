@@ -27,12 +27,15 @@
   }
 
   @include mobile {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    background-image: url(../img/film-slide.jpg);
+    background-size: contain;
+    background-position: center;
 
     &__slide {
-      background-image: url(../img/film-slide-mobile.png);
+      background: none;
       flex-shrink: 0;
-      background-size: auto;
     }
 
     &__slide-inner {
@@ -42,6 +45,11 @@
 
     &__img {
       max-width: 160px;
+    }
+
+    &__pagination {
+      position: absolute;
+      bottom: -50px !important;
     }
   }
 }

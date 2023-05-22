@@ -397,6 +397,7 @@
       &--visible {
         opacity: 0;
         transition: ease-in .1s;
+        transition-delay: 0s;
       }
     }
 
@@ -405,6 +406,7 @@
       .cards__card-title--visible,
       .cards__card-text--visible {
         opacity: 1;
+        transition-delay: .2s;
       }
     }
 
@@ -417,6 +419,7 @@
 
       &--visible {
         opacity: 0;
+        transition-delay: 0s;
         transition: ease-in .1s;
       }
     }
