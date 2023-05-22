@@ -359,6 +359,7 @@
 .header {
   position: absolute;
   width: 100%;
+  z-index: 10;
 }
 
 .header__inner {
@@ -379,12 +380,16 @@
 }
 
 .hero__top {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   flex: 1 0 auto;
   position: relative;
 }
 
 .hero__video-container {
-  z-index: -1;
+  z-index: 2;
   position: absolute;
   width: 100%;
   height: 100%;
