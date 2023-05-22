@@ -393,6 +393,19 @@
     &__card-title {
       font-size: 26px;
       line-height: 1.2em;
+
+      &--visible {
+        opacity: 0;
+        transition: ease-in .1s;
+      }
+    }
+
+    .swiper-slide-active {
+
+      .cards__card-title--visible,
+      .cards__card-text--visible {
+        opacity: 1;
+      }
     }
 
     &__card-text {
@@ -401,6 +414,11 @@
       line-height: 1.25em;
       flex: 1 0 auto;
       margin-bottom: 0;
+
+      &--visible {
+        opacity: 0;
+        transition: ease-in .1s;
+      }
     }
 
     &__card-inner {

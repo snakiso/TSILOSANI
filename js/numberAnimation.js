@@ -5,7 +5,6 @@ let expBlock = document.querySelector('.exp__container');
 
 
 
-
 for (let i = 0; i < numbers1.length; i++) {
   $(document).ready(function () {
     var show = true;
