@@ -400,6 +400,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  transition: ease-in 0.3s;
+}
+
+.hero__video--hidden {
+  opacity: 0;
 }
 
 .hero__bottom {

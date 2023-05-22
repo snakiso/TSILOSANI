@@ -24,6 +24,11 @@
     height: inherit;
     object-fit: cover;
     width: 100%;
+    transition: ease-in .3s;
+
+    &--hidden{
+      opacity: 0;
+    }
   }
 
   &__bottom {
