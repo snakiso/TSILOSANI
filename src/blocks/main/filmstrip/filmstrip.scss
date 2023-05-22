@@ -33,6 +33,10 @@
     background-size: contain;
     background-position: center;
 
+    &--margin{
+      margin-bottom: 150px;
+    }
+
     &__slide {
       background: none;
       flex-shrink: 0;
@@ -50,6 +54,13 @@
     &__pagination {
       position: absolute;
       bottom: -50px !important;
+    }
+
+    &__button{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -130px;
     }
   }
 }

@@ -205,9 +205,6 @@
 }
 
 .button {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 8px 26px;
   display: block;
   font-size: 16px;
@@ -378,14 +375,26 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .hero__top {
-  background: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   flex: 1 0 auto;
+  position: relative;
+}
+
+.hero__video-container {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__video {
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .hero__bottom {
@@ -393,9 +402,11 @@
 }
 
 .hero__wrapper {
+  position: relative;
   height: 100%;
   display: flex;
   justify-content: end;
+  z-index: 2;
 }
 
 .hero__inner {
@@ -1491,7 +1502,7 @@ body {
   }
 
   .hero__inner {
-    padding: 405px 0 90px 0;
+    padding: 0 0 15% 0;
     justify-content: end;
   }
 
@@ -1585,6 +1596,7 @@ body {
   .cards__card--slide-fs-0 {
     flex-shrink: 0;
     min-height: 200px;
+    margin-bottom: 20px;
   }
 
   .cards__card-img {
@@ -1879,6 +1891,10 @@ body {
     background-position: center;
   }
 
+  .filmstrip--margin {
+    margin-bottom: 150px;
+  }
+
   .filmstrip__slide {
     background: none;
     flex-shrink: 0;
@@ -1896,6 +1912,13 @@ body {
   .filmstrip__pagination {
     position: absolute;
     bottom: -50px !important;
+  }
+
+  .filmstrip__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -130px;
   }
 
   .cookies__container {
