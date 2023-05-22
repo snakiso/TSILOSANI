@@ -1158,6 +1158,7 @@
 .filmstrip__img {
   display: block;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .filmstrip__img--margin {
