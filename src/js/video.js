@@ -6,6 +6,6 @@ Fancybox.bind("[data-fancybox]", {
 let video = document.querySelector('.hero__video');
 
 video.addEventListener("loadeddata", () => {
-  video.classList.remove('hero__video--hidden')
+  video.classList.remove('hero__container--hidden')
   video.play()
 })

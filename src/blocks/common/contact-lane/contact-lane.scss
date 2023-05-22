@@ -40,6 +40,12 @@
         left: 0;
         top: 4%;
       }
+
+      &:hover {
+        .contact-lane__link {
+          color: $color-secondary;
+        }
+      }
     }
   }
 
@@ -58,12 +64,13 @@
     font-size: 15px;
     line-height: 1.73em;
     letter-spacing: 0.04em;
-
+    transition: ease-in .1s;
   }
 
   @include mobile {
     height: 140px;
     margin-bottom: 50px;
+
     &--instagram {
       height: 180px;
     }

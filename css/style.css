@@ -339,6 +339,10 @@
   top: 4%;
 }
 
+.contact-lane__link-box--instagram:hover .contact-lane__link {
+  color: #22B856;
+}
+
 .contact-lane__link-text {
   margin-left: 12px;
 }
@@ -354,6 +358,7 @@
   font-size: 15px;
   line-height: 1.73em;
   letter-spacing: 0.04em;
+  transition: ease-in 0.1s;
 }
 
 .header {
@@ -393,6 +398,16 @@
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.hero__video-dark {
+  position: absolute;
+  z-index: 3;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
 }
 
 .hero__video {
