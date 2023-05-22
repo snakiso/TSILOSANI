@@ -1,11 +1,30 @@
 .hero {
-  background: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    flex: 1 0 auto;
+  }
+
+  &__bottom {
+    flex: 0 1 auto;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+  }
 
   &__inner {
-    padding: 460px 0 250px 0;
+    padding: 0 0 10% 0;
     justify-content: end;
+    align-items: flex-end;
   }
 
   &__title {

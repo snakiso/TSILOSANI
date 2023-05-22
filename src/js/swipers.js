@@ -8,11 +8,11 @@ function initSwiperCategory() {
         el: '.swiper-pagination',
         clickable: true,
       },
+      loop: false,
       slidesPerView: 'auto',
       spaceBetween: 10,
       autoWidth: false,
       centeredSlides: true,
-      loop: true,
     });
 
     swiper2 = new Swiper('.cards-slider-2', { //СВАЙПЕР С ЦЕНАМИ
@@ -24,7 +24,7 @@ function initSwiperCategory() {
       spaceBetween: 10,
       autoWidth: false,
       centeredSlides: true,
-      loop: true,
+      loop: false,
     });
   } else if (screenWidth >= 600 && swiper != undefined) {
     swiper.destroy();

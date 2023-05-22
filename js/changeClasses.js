@@ -1,8 +1,6 @@
 let cardSlides = document.querySelectorAll('.cards__card--slide');
 
 
-console.log(cardSlides)
-
 function removeAttr() {
   var screenWidth = window.innerWidth;
   if (screenWidth < 800) {
