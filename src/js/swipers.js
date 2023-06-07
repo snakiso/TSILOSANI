@@ -1,19 +1,26 @@
 let swiper = undefined;
 let swiper2 = undefined;
+let swiperEl = document.querySelectorAll('.cards__card--copy');
+let swiperArr = document.querySelector('.cards__wrapper--copy');
 function initSwiperCategory() {
   var screenWidth = window.innerWidth;
   if (screenWidth < 600 && swiper == undefined) {
     swiper = new Swiper('.cards-slider', { //СВАЙПЕР ПЕРВЫЙ
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      loop: false,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+      loop: true,
       slidesPerView: 'auto',
       spaceBetween: 10,
       autoWidth: false,
       centeredSlides: true,
+      initialSlide: 1,
     });
+
+    for (let i = 0; i < array.length; i++) {
+      $(".cards__card--copy").clone().appendTo(".cards__wrapper--copy");
+    }
 
     swiper2 = new Swiper('.cards-slider-2', { //СВАЙПЕР С ЦЕНАМИ
       pagination: {
@@ -21,7 +28,7 @@ function initSwiperCategory() {
         clickable: true,
       },
       slidesPerView: 'auto',
-      autoplay:{
+      autoplay: {
         speed: 1000,
       },
       spaceBetween: 10,
@@ -30,6 +37,8 @@ function initSwiperCategory() {
       loop: false,
     });
   } else if (screenWidth >= 600 && swiper != undefined) {
+
+    $('.cards__wrapper--copy').children().slice(3).remove()
     swiper.destroy();
     swiper = undefined;
     swiper2.destroy();

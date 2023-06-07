@@ -14,7 +14,6 @@ video.addEventListener("loadeddata", () => {
 function ChangeVideo() {
   var screenWidth = window.innerWidth;
   if (screenWidth < 600) {
-    console.log(video.src)
     video.src = 'files/MobileVersion.mp4'
   } else if (screenWidth >= 600) {
     video.src = 'files/Desktop.mp4'
