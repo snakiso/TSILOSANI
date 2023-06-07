@@ -18,7 +18,7 @@ function initSwiperCategory() {
       initialSlide: 1,
     });
 
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < swiperEl.length; i++) {
       $(".cards__card--copy").clone().appendTo(".cards__wrapper--copy");
     }
 
