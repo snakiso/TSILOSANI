@@ -21,6 +21,9 @@ function initSwiperCategory() {
         clickable: true,
       },
       slidesPerView: 'auto',
+      autoplay:{
+        speed: 1000,
+      },
       spaceBetween: 10,
       autoWidth: false,
       centeredSlides: true,
@@ -78,3 +81,4 @@ const swiper4 = new Swiper('.filmstrip-slider', {
     clickable: true,
   },
 });
+
